@@ -19,11 +19,12 @@ flowchart LR
 
 ## Contents
 
-| File                                               | Purpose                                                                                   |
-| -------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| [`Dockerfile`](Dockerfile)                         | Practical example: A minimal image that runs `mcp-proxy` wrapping `mcp-server-fetch`      |
-| [`docker-compose.yml`](docker-compose.yml)         | Builds and launches the Docker service                                                    |
-| [`proxy_fetch_demo.ipynb`](proxy_fetch_demo.ipynb) | Notebook walks through the concept, the local setup, and the Docker workflow step by step |
+| File                                               | Purpose                                                                               |
+| -------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| [`Dockerfile`](Dockerfile)                         | Practical example: A minimal image that runs `mcp-proxy` wrapping `mcp-server-fetch`. |
+| [`docker-compose.yml`](docker-compose.yml)         | Builds and launches the Docker service.                                               |
+| [`proxy_fetch_demo.ipynb`](proxy_fetch_demo.ipynb) | Notebook walks through the concept, local setup and Docker workflow step by step.     |
+|                                                    |                                                                                       |
 
 ## Quick Start
 
@@ -40,5 +41,5 @@ docker compose up --build -d
 docker compose down
 ```
 
-Connect any MCP SSE client to `http://localhost:8000/sse`.
+Connect any MCP SSE client to `http://localhost:8000/sse`.\
 To change the host port, edit the `ports` mapping in `docker-compose.yml`.

@@ -1,2 +1,25 @@
-# Environments
+# Environment files
 .env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+
+# IDE configurations
+.idea/
+.vscode/
+*.code-workspace
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Git merge conflict leftovers
+*.orig
+
+# Cache directories
+.cache/
+
+# Temporary files
+tmp/
